@@ -1,6 +1,9 @@
 const city = {
     name: "Oslo",
-    population: 1071000,
+    population: {
+      humans: 1071000,
+      dogs: 200000,
+    },
     capitalOfSweden: false,
     publicTransports: ["Train", "Tram", "Bus", "Subway"],
     arrival: function () {
@@ -8,4 +11,4 @@ const city = {
     }
   };
 
-  console.log(arrival());
+  console.log(city.arrival());
